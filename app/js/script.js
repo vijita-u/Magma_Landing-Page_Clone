@@ -1,5 +1,4 @@
-const data_1 = `Magma_Landing-Page_Clone/images
-/frames00007.png
+const data_1 = `Magma_Landing-Page_Clone/images/frames00007.png
 	Magma_Landing-Page_Clone/images/frames00010.png
 	Magma_Landing-Page_Clone/images/frames00013.png
 	Magma_Landing-Page_Clone/images/frames00016.png
