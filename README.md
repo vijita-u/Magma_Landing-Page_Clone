@@ -113,7 +113,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   -The render function is responsible for rendering the current frame on the canvas.
   - It calls the **scaleImage function** to scale and center the current image frame on the canvas.
 
-  ```
+  ```javascript
     function render() {
       scaleImage(images[imageSequence.frame], context);
     }
