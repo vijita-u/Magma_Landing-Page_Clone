@@ -179,7 +179,7 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 	  referrerpolicy="no-referrer"
 	></script>
     ```
-    - ##### Scroll Trigger CDN
+  - ##### Scroll Trigger CDN
     ```html
     	<script
 	  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
@@ -195,19 +195,19 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
   - Include the swiperJS's JavaScript and CSS CDN in your index.html file. Refer [Swiper Js's Docs](https://swiperjs.com/get-started)
 
     Add link tag inside the <head> tag.
-  ```html
-    <head>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    </head>
-  ```
-  Add script tag at the end inside the <body> tag.
-  ```html
-    <body>
-      ...
-      ...
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    </body>
-  ```
+    ```html
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      </head>
+    ```
+    Add script tag at the end inside the <body> tag.
+    ```html
+      <body>
+        ...
+        ...
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      </body>
+    ```
 
   #### HTML Code Snippet 
   - Go to [Swiper Js's Demo Section](https://swiperjs.com/demos) and copy the code snippet that suits your requirements to you HTML file.
@@ -375,7 +375,7 @@ As I've completed this website, I've become aware of its high resource consumpti
 This project is open-source and available under the [MIT License](https://github.com/vijita-u/Magma_Landing-Page_Clone/blob/main/LICENSE).
 
 ## Acknowledgments
-Special thanks to [Sheriyan's Coding School](https://sheryians.com/) for putting out amazin content out there.
+Special thanks to [Sheriyan's Coding School](https://sheryians.com/) for putting out amazing content out there.
 
 ## Contact
 - [Email me](mailto:udayvijita3009@gmail.com?subject=Github%20Message)
