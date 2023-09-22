@@ -1,10 +1,10 @@
-const data_1 = `../images/frames00007.png
-	../images/frames00010.png
-	../images/frames00013.png
-	../images/frames00016.png
-	../images/frames00019.png
-	../images/frames00022.png
-	../images/frames00025.png
+const data_1 = `Magma_Landing-Page/images/frames00007.png
+	Magma_Landing-Page/images/frames00010.png
+	Magma_Landing-Page/images/frames00013.png
+	Magma_Landing-Page/images/frames00016.png
+	Magma_Landing-Page/images/frames00019.png
+	Magma_Landing-Page/images/frames00022.png
+	Magma_Landing-Page/images/frames00025.png
 	../images/frames00028.png
 	../images/frames00031.png
 	../images/frames00034.png
