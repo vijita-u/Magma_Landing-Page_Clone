@@ -1,6 +1,7 @@
 # Landing Page Clone of 'https://thisismagma.com/'
 
-![image](https://github.com/vijita-u/Magma_Landing-Page_Clone/assets/96591032/dbde3a1b-a0ed-4ba5-887e-1eb1da3739a8)
+![image](https://github.com/vijita-u/Magma_Landing-Page_Clone/assets/96591032/d39957b6-3237-40c8-af8d-a634621df4a4)
+
 
 
 ## Overview
