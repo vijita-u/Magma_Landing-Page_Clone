@@ -23,15 +23,15 @@ You can view a live demo of this project at [Magma Live Demo Link]().
 
 ### 1. HTML5 Canvas Animations
 
-#### Getting Started
+#### - Getting Started
 - Add an empty <canvas> tag to the html file.
 
 ```html
    <canvas></canvas>
 ```
 
-#### Implementing a function to take care of all HTML5 Canvas Animations:
-  ##### Parameters -
+#### - Implementing a function to take care of all HTML5 Canvas Animations:
+  ##### - Parameters -
   - **page**: A string representing the page of the HTML element containing the canvas where the animation will be displayed.
   - **data**: A string containing image file paths separated by line breaks (\n). These image files represent the frames of the animation.
 
@@ -42,7 +42,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   ```
   Let's now move on to the description of the code inside the function.
 
-  #### Canvas Initialization and Context Setup -
+  #### - Canvas Initialization and Context Setup -
   - The function starts by selecting the HTML canvas element specified by the page parameter and getting its 2D rendering context.
   - It sets the canvas dimensions to match the window's dimensions, making it responsive to window resizing.
 
@@ -54,7 +54,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
     canvas.height = window.innerHeight;
   ```
 
-  #### Window Resize Event Listener -
+  #### - Window Resize Event Listener -
   - An event listener is added to the window's resize event, so whenever the window size changes, the canvas dimensions are updated, and the render() function is called to redraw the animation.
 
   ```javascript
@@ -66,7 +66,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   ```
   - We'll talk about the render() function a little later.
 
-  #### Image Loading and Initialization -
+  #### - Image Loading and Initialization -
   - The **data** parameter is split into an array of image file paths, with each line representing a frame in the animation.
   - An array called **images** is created to store image objects, and an object called **imageSequence** is initialized with a frame property set to 0, representing the current frame of the animation.
   - A loop iterates through the image file paths and creates <img> elements for each image, sets their **src** attributes to the respective file paths, and adds them to the images array.
@@ -87,7 +87,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
     }
   ```
 
-  #### GSAP ScrollTrigger Animation -
+  #### - GSAP ScrollTrigger Animation -
   - GSAP (GreenSock Animation Platform) is used to tween (animate) the **imageSequence object's frame** property.
   - The animation changes the frame property from 0 to the total number of frames in the animation (frameCount). It uses the snap option to ensure that the animation only uses whole numbers for frames.
   - This animation is scroll-triggered, meaning it plays as the user scrolls down the page. The ScrollTrigger settings include a scrub of 0.5, which controls the sensitivity of the animation to scrolling, and a     **start** and **end** point within the trigger specified by **${page}**.
@@ -109,7 +109,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
     });
   ```
 
-  #### Rendering Function ( render() ) - 
+  #### - Rendering Function ( render() ) - 
   -The render function is responsible for rendering the current frame on the canvas.
   - It calls the **scaleImage function** to scale and center the current image frame on the canvas.
 
@@ -119,7 +119,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
     }
   ```
 
-  #### Image Scaling Function ( scaleImage() ) -
+  #### - Image Scaling Function ( scaleImage() ) -
   - The **scaleImage function** calculates the scaling ratio based on the canvas and image dimensions, ensuring the image is centered and scaled appropriately.
   
   ```javascript
@@ -145,7 +145,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   }
   ```
 
-  #### ScrollTrigger Pinning -
+  #### - ScrollTrigger Pinning -
   - Lastly, a ScrollTrigger is created to pin the specified page element when it enters the viewport. This pins the content as the user scrolls.
 
   ```javascript
@@ -165,12 +165,12 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 - In this project, Locomotive Scroll and Scroll Trigger have been merged to combine Locomotive Scroll's smoothness and speed along with GSAP Scroll Trigger's ease of creating animations.
 - The above has been made possible by the JS code provided in [this codepen](https://codepen.io/GreenSock/pen/ExPdqKy).
 
-  #### Set up
-  - ##### Locomotive CDN
+  #### - Set up
+  - ##### - Locomotive CDN
     ```html
     	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     ```
-  - ##### GSAP CDN
+  - ##### - GSAP CDN
     ```html
     	<script
 	  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
@@ -179,7 +179,7 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 	  referrerpolicy="no-referrer"
 	></script>
     ```
-    - ##### Scroll Trigger CDN
+    - ##### - Scroll Trigger CDN
     ```html
     	<script
 	  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
@@ -191,7 +191,7 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 
 ### 3. Carousel using Swiper JS
 
-  #### Getting Started
+  #### - Getting Started
   - Include the swiperJS's JavaScript and CSS CDN in your index.html file. Refer [Swiper Js's Docs](https://swiperjs.com/get-started)
 
     Add link tag inside the <head> tag.
@@ -209,7 +209,7 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
     </body>
   ```
 
-  #### HTML Code Snippet 
+  #### - HTML Code Snippet 
   - Go to [Swiper Js's Demo Section](https://swiperjs.com/demos) and copy the code snippet that suits your requirements to you HTML file.
 
   ```html
@@ -223,7 +223,7 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 	
   ```
 
-  #### Configure SwiperJS Carousel
+  #### - Configure SwiperJS Carousel
   ```javascript
 
     // Swiper JS Carousel Configuration
@@ -297,11 +297,11 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 - The website has been made responsive using sass mixins for better code management.
 - The burger menu in the site has been made to work exactly as the original website which makes tjhe website more responsive and interactive like the original.
 
-## Resources Used
+## - Resources Used
 - **Original Landing Page** : [Magma Landing Page](https://thisismagma.com/)
 - **Youtube Tutorial**: [Sheriyan's Coding School's Youtube Video](https://youtu.be/n6UPwT2hf_g?si=5j5HCjAaFe4jgwZY)
 
-## Project Highlights
+## - Project Highlights
 In this project, I've undertaken several key initiatives to enhance and expand upon the original tutorial, making the website more versatile, feature-rich and close to the original one. Here are the project highlights:
 
   ### 1. Cross-Device Compatibility:
@@ -331,7 +331,7 @@ In this project, I've undertaken several key initiatives to enhance and expand u
     	I crafted my own CSS and HTML code for each page, providing a fresh take that deviates significantly from the original tutorial in most cases.
 
 
-## Tools Used
+## - Tools Used
 - HTML
 - CSS
 - JS
@@ -343,7 +343,7 @@ In this project, I've undertaken several key initiatives to enhance and expand u
 - SwiperJs
 - TextillateJs
 
-## Usage
+## - Usage
 
 ### 1. Cloning the repository
 ```bash
@@ -365,19 +365,19 @@ Make sure to save the changes.
 
 **That's it. You have cloned the repository.**
 
-## Future Improvements
+## - Future Improvements
 As I've completed this website, I've become aware of its high resource consumption and occasional performance issues. I am eager to acquire knowledge and skills in optimizing the website to make it more lightweight and responsive.
 
-## Contributions
+## - Contributions
 - This project was inspired by the original [Magma Landing Page](https://thisismagma.com/) website and [Sheriyan Coding School's Youtube Video](https://youtu.be/n6UPwT2hf_g?si=5j5HCjAaFe4jgwZY).
 
-## License
+## - License
 This project is open-source and available under the [MIT License](https://github.com/vijita-u/Magma_Landing-Page_Clone/blob/main/LICENSE).
 
-## Acknowledgments
+## - Acknowledgments
 Special thanks to [Sheriyan's Coding School](https://sheryians.com/) for putting out amazin content out there.
 
-## Contact
+## - Contact
 - [Email me](mailto:udayvijita3009@gmail.com?subject=Github%20Message)
 
 - [Let's connect on LinkedIn](https://www.linkedin.com/in/vijita-uday/)
