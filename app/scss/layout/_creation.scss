@@ -1,7 +1,6 @@
 @use "../util" as u;
 
 .creation {
-	// background-color: pink;
 	overflow: hidden;
 
 	&__title {
@@ -14,7 +13,6 @@
 	}
 
 	&__grid {
-		// background-color: red;
 		position: relative;
 
 		@include u.breakpoint-up(large) {
