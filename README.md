@@ -344,3 +344,39 @@ In this project, I've undertaken several key initiatives to enhance and expand u
 
 ## Usage
 
+### 1. Cloning the repository
+```bash
+  git clone https://github.com/vijita-u/Magma_Landing-Page_Clone.git
+```
+
+### 2. Open the project in VS Code
+```
+Go to "File" -> "Open Folder" and select the folder where you cloned the repository. This will open the project in your code editor.
+```
+### 3. Launching the Website
+- **Install Ritwick Dey's Live Server Extension (if not installed)**
+- **Launch the live server**
+
+### 4. Update CDN Links (If required)
+Make sure to save the changes.
+
+### 5. View the website
+
+**That's it. You have cloned the repository.**
+
+## Future Improvements
+As I've completed this website, I've become aware of its high resource consumption and occasional performance issues. I am eager to acquire knowledge and skills in optimizing the website to make it more lightweight and responsive.
+
+## Contributions
+- This project was inspired by the original [Magma Landing Page](https://thisismagma.com/) website and [Sheriyan Coding School's Youtube Video](https://youtu.be/n6UPwT2hf_g?si=5j5HCjAaFe4jgwZY).
+
+## License
+This project is open-source and available under the [MIT License](https://github.com/vijita-u/Magma_Landing-Page_Clone/blob/main/LICENSE).
+
+## Acknowledgments
+Special thanks to [Sheriyan's Coding School](https://sheryians.com/) for putting out amazin content out there.
+
+## Contact
+- [Email me](mailto:udayvijita3009@gmail.com?subject=Github%20Message)
+
+- [Let's connect on LinkedIn](https://www.linkedin.com/in/vijita-uday/)
