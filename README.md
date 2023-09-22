@@ -162,7 +162,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
 Overall, this function combines HTML5 Canvas rendering, image loading, GSAP animation with ScrollTrigger, and responsive design techniques to create a visually appealing and scroll-triggered animation on a webpage.
 
 ### 2. Scrolling Animations
-- In this project, Locomotive Scroll and Scroll Trigger have been merged to combine Locomotive Scroll's smoothness and speed along with GSAP Scroll Trigger's ease of creating animations.
+- In this project, Locomotive Scroll and Scroll Trigger have been merged to combine Locomotive Scroll's smooth scrolling and speed along with GSAP Scroll Trigger's ease of creating animations.
 - The above has been made possible by the JS code provided in [this codepen](https://codepen.io/GreenSock/pen/ExPdqKy).
 
   #### Set up
