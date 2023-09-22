@@ -14,8 +14,7 @@ The primary motivation behind this project was to acquire hands-on experience wi
 3. GSAP Scroll Trigger
 4. Locomotive
 5. SwiperJS
-6. TextillateJS
-
+   
 ## Live Demo
 You can view a live demo of this project at [Magma Live Demo Link]().
 
@@ -23,12 +22,19 @@ You can view a live demo of this project at [Magma Live Demo Link]().
 
 ### 1. HTML5 Canvas Animations
 
+#### Getting Started
+- Add an empty <canvas> tag to the html file.
+
+```html
+   <canvas></canvas>
+```
+
 #### Implementing a function to take care of all HTML5 Canvas Animations:
   ##### Parameters -
   - **page**: A string representing the page of the HTML element containing the canvas where the animation will be displayed.
   - **data**: A string containing image file paths separated by line breaks (\n). These image files represent the frames of the animation.
 
-  ```
+  ```javascript
   function canvas(page, data) {
     ...
   }
@@ -39,7 +45,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   - The function starts by selecting the HTML canvas element specified by the page parameter and getting its 2D rendering context.
   - It sets the canvas dimensions to match the window's dimensions, making it responsive to window resizing.
 
-  ```
+  ```javascript
     const canvas = document.querySelector(`${page} canvas`);
     const context = canvas.getContext("2d");
 
@@ -50,7 +56,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   #### Window Resize Event Listener -
   - An event listener is added to the window's resize event, so whenever the window size changes, the canvas dimensions are updated, and the render() function is called to redraw the animation.
 
-  ```
+  ```javascript
     window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -158,10 +164,34 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
 - In this project, Locomotive Scroll and Scroll Trigger have been merged to combine Locomotive Scroll's smoothness and speed along with GSAP Scroll Trigger's ease of creating animations.
 - The above has been made possible by the JS code provided in [this codepen](https://codepen.io/GreenSock/pen/ExPdqKy).
 
+  #### Set up
+  - ##### Locomotive CDN
+    ```html
+    	<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    ```
+  - ##### GSAP CDN
+    ```html
+    	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+	  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"
+	></script>
+    ```
+    - ##### Scroll Trigger CDN
+    ```html
+    	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+	  integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"
+	></script>
+    ```
+
 ### 3. Carousel using Swiper JS
 
   #### Getting Started
-  - Include the swiperJS's JavaScript and CSS CDN in your index.html file.
+  - Include the swiperJS's JavaScript and CSS CDN in your index.html file. Refer [Swiper Js's Docs](https://swiperjs.com/get-started)
 
     Add link tag inside the <head> tag.
   ```html
@@ -178,7 +208,21 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
     </body>
   ```
 
-  ### Configure SwiperJS Carousel
+  #### HTML Code Snippet 
+  - Go to [Swiper Js's Demo Section](https://swiperjs.com/demos) and copy the code snippet that suits your requirements to you HTML file.
+
+  ```html
+     <div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide">
+		....
+	  </div>
+	</div>
+     </div>
+	
+  ```
+
+  #### Configure SwiperJS Carousel
   ```javascript
 
     // Swiper JS Carousel Configuration
@@ -247,3 +291,56 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
     });
 
   ```
+
+### 4. Responsive Design
+- The website has been made responsive using sass mixins for better code management.
+- The burger menu in the site has been made to work exactly as the original website which makes tjhe website more responsive and interactive like the original.
+
+## Resources Used
+- **Original Landing Page** : [Magma Landing Page](https://thisismagma.com/)
+- **Youtube Tutorial**: [Sheriyan's Coding School's Youtube Video](https://youtu.be/n6UPwT2hf_g?si=5j5HCjAaFe4jgwZY)
+
+## Project Highlights
+In this project, I've undertaken several key initiatives to enhance and expand upon the original tutorial, making the website more versatile, feature-rich and close to the original one. Here are the project highlights:
+
+  ### 1. Cross-Device Compatibility:
+  The website is meticulously crafted to ensure cross-device compatibility, guaranteeing a seamless and responsive user experience on various screen sizes and devices.
+
+  ### 2. Burger Menu Animation:
+  I've cloned the captivating burger menu animation from the original website, replicating its visual appeal and interactive behavior.
+
+  ### 3. Additional Pages:
+  To further strengthen my web development skills, I've created several additional pages that were not covered in the tutorial. Each page served as a canvas for practicing and showcasing different technologies and techniques:
+
+  - **Page 8 - Button Animation**:
+    	I implemented GSAP to animate the button on scroll to replicate the original as much as possible.
+  - **Page 9 - Heading Animation with Textillate.js**:
+    	Using Textillate.js I created an animation similar to the original site.
+  - **Page 10 -  Canvas Animation**:
+    	This page, originally omitted in the tutorial, was a creative challenge. I leveraged HTML5 Canvas, ScrollTrigger, CSS, and JavaScript to replicate the entire animation from scratch. This challenging task pushed my creative and technical boundaries.
+  - **Page 11 - Created from Scratch**:
+    	Page 11 was not covered in the tutorial, so I took it upon myself to create it entirely from scratch, demonstrating my ability to design and implement web pages independently.
+  - **Page 12 - Carousel Integration**:
+    	Another missing element from the tutorial was a carousel. Using my knowledge gained from a previous project, I integrated a carousel on page 12, showcasing my proficiency with SwiperJS. This page, too, was crafted from the ground up.
+  - **Code Refactoring**:
+    	To ensure a clean and maintainable codebase, I refactored the JavaScript code in script.js by organizing it into functions. This approach minimizes redundancy and improves code readability.
+  - **Sass Implementation**:
+    	In place of traditional CSS, I opted for Sass to enhance code maintainability and readability, ensuring a more efficient development process.
+  - **Unique CSS and HTML**:
+    	I crafted my own CSS and HTML code for each page, providing a fresh take that deviates significantly from the original tutorial in most cases.
+
+
+## Tools Used
+- HTML
+- CSS
+- JS
+- Sass
+- Locomotive
+- GSAP
+- GSAP Scroll Trigger
+- HTML5 Canvas
+- SwiperJs
+- TextillateJs
+
+## Usage
+
