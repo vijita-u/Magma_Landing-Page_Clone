@@ -91,7 +91,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   - GSAP (GreenSock Animation Platform) is used to tween (animate) the **imageSequence object's frame** property.
   - The animation changes the frame property from 0 to the total number of frames in the animation (frameCount). It uses the snap option to ensure that the animation only uses whole numbers for frames.
   - This animation is scroll-triggered, meaning it plays as the user scrolls down the page. The ScrollTrigger settings include a scrub of 0.5, which controls the sensitivity of the animation to scrolling, and a     **start** and **end** point within the trigger specified by **${page}**.
-  - The **onUpdate** callback function render is called whenever the animation updates to redraw the current frame.
+  - The **onUpdate** callback function, render(), is called whenever the animation updates to redraw the current frame.
 
   ```javascript
     gsap.to(imageSequence, {
