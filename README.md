@@ -64,7 +64,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   - An array called **images** is created to store image objects, and an object called **imageSequence** is initialized with a frame property set to 0, representing the current frame of the animation.
   - A loop iterates through the image file paths and creates <img> elements for each image, sets their **src** attributes to the respective file paths, and adds them to the images array.
   
-  ```
+  ```javascript
     const imageFiles = data.split("\n"); // Image array
     const frameCount = imageFiles.length; // Image count
 
@@ -86,7 +86,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   - This animation is scroll-triggered, meaning it plays as the user scrolls down the page. The ScrollTrigger settings include a scrub of 0.5, which controls the sensitivity of the animation to scrolling, and a     **start** and **end** point within the trigger specified by **${page}**.
   - The **onUpdate** callback function render is called whenever the animation updates to redraw the current frame.
 
-  ```
+  ```javascript
     gsap.to(imageSequence, {
       frame: frameCount,
       snap: "frame",
@@ -115,7 +115,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   #### Image Scaling Function ( scaleImage() ) -
   - The **scaleImage function** calculates the scaling ratio based on the canvas and image dimensions, ensuring the image is centered and scaled appropriately.
   
-  ```
+  ```javascript
     function scaleImage(image, context) {
       let canvas = context.canvas;
       let horizontalRatio = canvas.width / image.width;
@@ -141,7 +141,7 @@ You can view a live demo of this project at [Magma Live Demo Link]().
   #### ScrollTrigger Pinning -
   - Lastly, a ScrollTrigger is created to pin the specified page element when it enters the viewport. This pins the content as the user scrolls.
 
-  ```
+  ```javascript
     ScrollTrigger.create({
 		  trigger: `${page}`,
 		  pin: true,
@@ -164,13 +164,13 @@ Overall, this function combines HTML5 Canvas rendering, image loading, GSAP anim
   - Include the swiperJS's JavaScript and CSS CDN in your index.html file.
 
     Add link tag inside the <head> tag.
-  ```
+  ```html
     <head>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     </head>
   ```
   Add script tag at the end inside the <body> tag.
-  ```
+  ```html
     <body>
       ...
       ...
