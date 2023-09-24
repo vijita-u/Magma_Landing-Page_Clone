@@ -17,7 +17,7 @@ The primary motivation behind this project was to acquire hands-on experience wi
 5. SwiperJS
    
 ## Live Demo
-You can view a live demo of this project at [Magma Live Demo Link]().
+You can view a live demo of this project at [Magma Live Demo Link](https://vijita-u.github.io/Magma_Landing-Page_Clone/).
 
 ## Features
 
