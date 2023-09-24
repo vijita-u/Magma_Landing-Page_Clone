@@ -2,7 +2,7 @@
 
 ![image](https://github.com/vijita-u/Magma_Landing-Page_Clone/assets/96591032/d39957b6-3237-40c8-af8d-a634621df4a4)
 
-
+## Live Link: [Magma Landing Page Clone](https://vijita-u.github.io/Magma_Landing-Page_Clone/)
 
 ## Overview
 This project is a clone of the landing page of 'https://thisismagma.com/' with the goal of learning and implementing various web development technologies and techniques. The project includes HTML5 Canvas animations, scrolling animations using GSAP Scroll Trigger & Locomotive, a carousel using Swiper JS and text animations using TextillateJS.
